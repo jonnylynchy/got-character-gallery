@@ -2,12 +2,12 @@ import PropTypes from 'prop-types'
 
 const Character = ({ family, fullName, imageUrl, title }) => {
     return (
-        <div className="card-container">
+        <article className="card-container">
             <img src={ imageUrl } alt={ fullName } />
             <div className="card-body">
-                <h1>{ title } { fullName } of { family }</h1>
+                <h2>{ title } { fullName } of { family }</h2>
             </div>
-        </div>
+        </article>
     );
 };
 
